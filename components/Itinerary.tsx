@@ -2,7 +2,7 @@ const events = [
   {
     time: "7:00 PM",
     title: "Drinks, Food & Hang",
-    detail: "Location TBD — details to follow",
+    detail: "Velvet Taco · 1115 Howell Mill Rd Bldg 300, #P125, Atlanta, GA 30318",
     icon: "🥂",
   },
   {
