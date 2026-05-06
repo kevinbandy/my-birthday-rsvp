@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(mise use *)",
+      "Bash(nodenv local *)",
+      "Bash(nvm use *)",
+      "Bash(npx --version)",
+      "Bash(mv .tool-versions /tmp/birthday-tool-versions)",
+      "Bash(mv /tmp/birthday-tool-versions .tool-versions)",
+      "Bash(cp .tool-versions /tmp/birthday-tool-versions)",
+      "Bash(~/.asdf/shims/npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(cp /tmp/birthday-tool-versions .tool-versions)",
+      "Bash(ASDF_NODEJS_VERSION=22.12.0 /Users/kevinbandy/.asdf/shims/npx create-next-app@latest /Users/kevinbandy/Development/birthday-f1 --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(ASDF_NODEJS_VERSION=22.12.0 /Users/kevinbandy/.asdf/installs/nodejs/22.12.0/bin/npx create-next-app@latest /Users/kevinbandy/Development/birthday-f1 --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(npm run *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
