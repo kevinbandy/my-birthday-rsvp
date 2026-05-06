@@ -9,6 +9,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  icons: { icon: "/f1-icon.png" },
   title: "Kevin's 37th — F1 Arcade Atlanta",
   description:
     "Join Kevin for his 37th birthday at F1 Arcade Atlanta on May 13th. Drinks, racing, and ice cream. You're going down.",
