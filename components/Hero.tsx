@@ -31,12 +31,21 @@ export default function Hero() {
           Wednesday, May 13th · 7 PM
         </p>
 
-        <a
-          href="#rsvp"
-          className="mt-6 inline-block bg-[#e10600] text-white font-bold text-sm tracking-widest uppercase px-8 py-4 rounded-none hover:bg-[#ff1a1a] active:scale-95 transition-all duration-150"
-        >
-          RSVP Now
-        </a>
+        <div className="mt-6 flex flex-col sm:flex-row items-center gap-3">
+          <a
+            href="#rsvp"
+            className="inline-block bg-[#e10600] text-white font-bold text-sm tracking-widest uppercase px-8 py-4 hover:bg-[#ff1a1a] active:scale-95 transition-all duration-150"
+          >
+            RSVP Now
+          </a>
+          <a
+            href="/bandys-birthday.ics"
+            download
+            className="inline-block bg-transparent border border-[#2a2a2a] text-[#888] font-bold text-sm tracking-widest uppercase px-8 py-4 hover:border-[#444] hover:text-[#f5f5f5] active:scale-95 transition-all duration-150"
+          >
+            + Add to Calendar
+          </a>
+        </div>
       </div>
 
       {/* Side accents */}

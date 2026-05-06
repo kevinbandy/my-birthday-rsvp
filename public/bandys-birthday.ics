@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bandy's Birthday//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bandys-birthday-2026@my-birthday-rsvp.vercel.app
+DTSTART;TZID=America/New_York:20260513T190000
+DTEND;TZID=America/New_York:20260513T220000
+SUMMARY:Bandy's Birthday Celebration 🏎️
+DESCRIPTION:Join Kevin for his 37th birthday!\n\nItinerary:\n• 7:00 PM — Drinks\, food & hang (location TBD)\n• 8:00 PM — F1 Arcade Atlanta (racing time!)\n• After — Jeni's Splendid Ice Creams\n\nRSVP & details: https://my-birthday-rsvp.vercel.app/
+URL:https://my-birthday-rsvp.vercel.app/
+LOCATION:F1 Arcade Atlanta\, 1115 Howell Mill Rd NW\, Atlanta\, GA 30318
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Bandy's Birthday Celebration starts in 1 hour!
+END:VALARM
+END:VEVENT
+END:VCALENDAR
