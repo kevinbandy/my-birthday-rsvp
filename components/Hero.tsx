@@ -1,4 +1,5 @@
 import Image from "next/image";
+import RsvpButton from "./RsvpButton";
 
 export default function Hero() {
   return (
@@ -49,12 +50,7 @@ export default function Hero() {
         </p>
 
         <div className="mt-6 flex flex-col sm:flex-row items-center gap-3">
-          <a
-            href="#rsvp"
-            className="inline-block bg-[#e10600] text-white font-bold text-sm tracking-widest uppercase px-8 py-4 hover:bg-[#ff1a1a] active:scale-95 transition-all duration-150"
-          >
-            RSVP Now
-          </a>
+          <RsvpButton />
           <a
             href="/bandys-birthday.ics"
             download
