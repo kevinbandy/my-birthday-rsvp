@@ -1,6 +1,23 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <section className="relative min-h-svh flex flex-col items-center justify-center text-center px-6 overflow-hidden carbon">
+    <section className="relative min-h-svh flex flex-col items-center justify-center text-center px-6 overflow-hidden">
+      {/* Background photo */}
+      <Image
+        src="/Snapshot_20260390_160312.jpg"
+        alt="Kevin behind the wheel in a racing helmet"
+        fill
+        priority
+        className="object-cover object-top"
+      />
+
+      {/* Dark gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
+
+      {/* Carbon fiber texture on top */}
+      <div className="absolute inset-0 carbon opacity-40" />
+
       {/* Red top bar */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-[#e10600]" />
 
@@ -41,7 +58,7 @@ export default function Hero() {
           <a
             href="/bandys-birthday.ics"
             download
-            className="inline-block bg-transparent border border-[#2a2a2a] text-[#888] font-bold text-sm tracking-widest uppercase px-8 py-4 hover:border-[#444] hover:text-[#f5f5f5] active:scale-95 transition-all duration-150"
+            className="inline-block bg-black/40 backdrop-blur-sm border border-white/20 text-[#ccc] font-bold text-sm tracking-widest uppercase px-8 py-4 hover:border-white/40 hover:text-white active:scale-95 transition-all duration-150"
           >
             + Add to Calendar
           </a>
