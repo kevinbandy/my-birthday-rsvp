@@ -33,10 +33,27 @@ export default function AttendeeGrid() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let local: { name?: string; helmetDesign?: string; helmetColor?: string } = {};
+    try {
+      const saved = localStorage.getItem("birthday-f1-rsvp");
+      if (saved) local = JSON.parse(saved);
+    } catch {}
+
     fetch("/api/attendees")
       .then((r) => r.json())
       .then((d) => {
-        setAttendees(d.records ?? []);
+        const records: Attendee[] = (d.records ?? []).map((a: Attendee) => {
+          if (
+            local.name &&
+            a.name.toLowerCase() === local.name.toLowerCase() &&
+            local.helmetDesign &&
+            local.helmetColor
+          ) {
+            return { ...a, helmetDesign: local.helmetDesign, helmetColor: local.helmetColor };
+          }
+          return a;
+        });
+        setAttendees(records);
         setLoading(false);
       })
       .catch(() => setLoading(false));
