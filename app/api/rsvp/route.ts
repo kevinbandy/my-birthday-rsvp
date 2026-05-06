@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const { name, attending, racingLevel, note } = await req.json();
+  const { name, attending, racingLevel, note, helmetDesign, helmetColor } = await req.json();
 
   if (!name || !attending) {
     return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
@@ -30,6 +30,8 @@ export async function POST(req: NextRequest) {
           Attending: attending,
           RacingLevel: racingLevel || "",
           Note: note || "",
+          HelmetDesign: helmetDesign || "",
+          HelmetColor: helmetColor || "",
           CreatedAt: new Date().toISOString(),
         },
       }),
