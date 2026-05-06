@@ -32,7 +32,6 @@ export async function POST(req: NextRequest) {
           Note: note || "",
           HelmetDesign: helmetDesign || "",
           HelmetColor: helmetColor || "",
-          CreatedAt: new Date().toISOString(),
         },
       }),
     }

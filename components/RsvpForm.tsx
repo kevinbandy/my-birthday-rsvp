@@ -74,6 +74,7 @@ export default function RsvpForm() {
     setHelmetDesign(saved.helmetDesign ?? "stripe");
     setHelmetColor(saved.helmetColor   ?? "scuderia");
     setIsUpdate(true);
+    setStatus("success");
   }, []);
 
   const showRacing = attending === "yes" || attending === "maybe";
